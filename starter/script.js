@@ -7,11 +7,9 @@ let highscore = 0;
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
-
 const displayNumber = function (number) {
   document.querySelector('.number').textContent = number;
 };
-
 const backgroundStyle = function (style) {
   document.querySelector('body').style.backgroundColor = style;
 };
@@ -27,6 +25,7 @@ const scoreNumber = function (scoreContent) {
 const guessNumber = function (guessNumber) {
   document.querySelector('.guess').value = guessNumber;
 };
+
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
